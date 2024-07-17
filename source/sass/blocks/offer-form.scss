@@ -27,6 +27,10 @@
     padding: 8px 16px;
     width: 361px;
     margin-bottom: 8px;
+
+    @media (max-width: $breakpoint-tablet) {
+        width: 250px;
+    }
 }
 
 .offer-form__button{
@@ -41,6 +45,9 @@
     background: #CC8E1E;
     padding: 19px 159px;
     margin-bottom: 14px;
+    @media (max-width: $breakpoint-tablet) {
+        padding: 19px 100px;
+    }
 }
 
 .offer-form__check{

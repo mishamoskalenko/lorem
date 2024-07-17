@@ -2,11 +2,9 @@
   width: 280px;
   margin-right: auto;
   margin-left: auto;
-
   @media (min-width: $breakpoint-tablet) {
-    width: 745px;
+    width: 708px;
   }
-
   @media (min-width: $breakpoint-desktop) {
     width: 1280px;
   }

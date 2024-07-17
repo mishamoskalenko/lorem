@@ -1,5 +1,9 @@
 .contact-email{
     margin-left: 450px;
+    @media (max-width: $breakpoint-desktop) {
+        margin-left: 0px;
+        text-align: center;
+    }
 }
 
 .contact-email__description{
@@ -23,6 +27,17 @@
     height: 24px;
     top: 70px;
     left: -140px;
+    @media (max-width: $breakpoint-desktop) {
+        top: -227px;
+        left: 460px;
+    }
+    @media (max-width: $breakpoint-tablet) {
+        top: -227px;
+        left: 250px;
+    }
+    @media (max-width: 400px) {
+        display: none;
+    }
 }
 
 .contact-email__email{
@@ -38,4 +53,7 @@
 .contact-email__list{
     display: flex;
     gap: 30px;
+    @media (max-width: $breakpoint-desktop) {
+        justify-content: center;
+    }
 }

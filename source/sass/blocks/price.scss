@@ -11,10 +11,67 @@
     line-height: 48px;
     text-transform: uppercase;
     margin-bottom: 48px;
-} 
+}  
+
+.price__item{
+    display: grid;
+    grid-template-columns: 196px 630px 197px;
+    gap: 20px;
+    background: #F1EFE9;
+    padding: 8px 0px 8px 0px;
+    margin-bottom: 26px;
+    @media (max-width: $breakpoint-desktop) {
+        grid-template-columns: 80px 320px 150px;
+    }
+    @media (max-width: $breakpoint-mobile) {
+        grid-template-columns: 80px 300px 75px;
+        width: 540px;
+    }
+}
+
+.price__text{
+    color: #000;
+    text-align: center;
+    font-family: Oranienbaum;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
 
 .price__block{
     padding: 46px 108px 22px;
     border: 1px solid rgba(204, 142, 30, 0.27);
     background: #FFF;
+    position: relative;
+    @media (max-width: $breakpoint-desktop) {
+        padding: 23px 50px 11px;
+    }
+    @media (max-width: $breakpoint-mobile) {
+        padding: 5px 10px 5px;
+        width: 290px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+.price__block::after{
+    content: "";
+    position: absolute;
+    background-image: url(../../img/price-scroll.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+    width: 8px;
+    height: 762px;
+    top: 23px;
+    right: 25px;
+    @media (max-width: $breakpoint-mobile) {
+        top: 5px;
+        right: -280px;
+    }
+    @media (min-width: $breakpoint-desktop) {
+        top: 45px;
+        right: 60px;
+    }
 }

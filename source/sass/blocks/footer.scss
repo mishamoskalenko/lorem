@@ -1,4 +1,23 @@
 .footer{
     display: flex;
     width: 1280px;
+    @media (max-width: $breakpoint-desktop) {
+        display: block;
+        width: 708px;
+    }
+    @media (max-width: $breakpoint-tablet) {
+        width: 280px;
+    }
+}
+
+.footer__description{
+    color: #2B3F5B;
+    font-family: "Inter";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 15px;
+    max-width: 290px;
+    margin-right: 32.82px;
 }

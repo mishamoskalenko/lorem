@@ -1,0 +1,34 @@
+.swiper-button-next:after{
+    content: "";
+    position: absolute;
+    background-image: url(../../img/navigation-right.svg);
+    background-position: center;
+    z-index: 10;
+    width: 88px;
+    height: 88px;
+    top: 20px;
+    left: -50px;
+    @media (max-width: $breakpoint-mobile) {
+        background-size: contain;
+        width: 44px;
+        height: 44px;
+        left: -10px;
+    }
+}
+
+.swiper-button-prev:after{
+    content: "";
+    position: absolute;
+    background-image: url(../../img/navigation-left.svg);
+    background-position: center;
+    z-index: 10;
+    width: 88px;
+    height: 88px;
+    top: 20px;
+    left: -10px;
+    @media (max-width: $breakpoint-mobile) {
+        background-size: contain;
+        width: 44px;
+        height: 44px;
+    }
+}
