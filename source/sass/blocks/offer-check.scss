@@ -1,0 +1,42 @@
+.offer-check__text {
+    max-width: 332px;
+    color: #2B3F5B;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.offer-check__input {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #B6BBC3;
+    background: #F6F5F2;
+    position: relative;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.offer-check__input:checked::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 7px;
+    height: 12px;
+    border: solid orange;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
