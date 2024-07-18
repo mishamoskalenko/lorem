@@ -132,11 +132,8 @@
     right: -20px;
     top: -1px;
     @media (max-width: $breakpoint-desktop) {
-        background-size: contain;
-        width: 50px;
-        height: 45px;
-        right: 340px;
-        top: 10px;
+        width: 0px;
+        height: 0px;
     }
 }
 
