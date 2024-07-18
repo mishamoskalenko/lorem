@@ -32,4 +32,20 @@ toggler.addEventListener('click', function () {
 });
 
 
-
+document.addEventListener("DOMContentLoaded", function() {
+  const dropdownParents = document.querySelectorAll('.header__item--arrow');
+  dropdownParents.forEach(function(item) {
+      const link = item.querySelector('.header__link');
+      const dropdown = item.querySelector('.header__dropdown');
+      link.addEventListener('click', function(e) {
+          e.preventDefault(); 
+          dropdownParents.forEach(function(parent) {
+              const otherDropdown = parent.querySelector('.header__dropdown');
+              if (otherDropdown !== dropdown) {
+                  otherDropdown.classList.remove('show-dropdown');
+              }
+          });
+          dropdown.classList.toggle('show-dropdown');
+      });
+  });
+});
