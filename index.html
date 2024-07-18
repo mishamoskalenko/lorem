@@ -18,11 +18,11 @@
       <img src="./img/logo.svg" alt="logo lorem centre">
     </div>
     <div>
-      <ul class="header__nav nav-list">
-        <li class="nav-list__item">Nasi lekarze</li>
-        <li class="nav-list__item">Kontakt</li>
-        <li class="nav-list__item">Programs</li>
-        <li class="nav-list__item">O nas</li>
+      <ul class="header__nav">
+        <li class="header__item">Nasi lekarze</li>
+        <li class="header__item">Kontakt</li>
+        <li class="header__item">Programs</li>
+        <li class="header__item">O nas</li>
       </ul>
     </div>
     <div>
@@ -41,6 +41,9 @@
         </li>
       </ul>
     </div>
+    <button class="header__toggler" type="button">
+      <span class="visually-hidden">Open menu</span>
+    </button>
   </header>
   <main class="page__main info container">
     <section class="promotion">
@@ -104,26 +107,26 @@
     <section class="offer">
       <h2 class="offer__header">Акційні пропозиції</h2>
       <div class="offer__block">
-        <div class="offer__slider offer-slider">
+        <div class="offer__slider">
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img class="offer-slider__image" src="./img/offer-1.jpg" alt="">
+                <img class="offer__image" src="./img/offer-1.jpg" alt="">
               </div>
               <div class="swiper-slide">
-                <img class="offer-slider__image" src="./img/offer-2.jpg" alt="">
+                <img class="offer__image" src="./img/offer-2.jpg" alt="">
               </div>
               <div class="swiper-slide">
-                <img class="offer-slider__image" src="./img/offer-2.jpg" alt="">
+                <img class="offer__image" src="./img/offer-2.jpg" alt="">
               </div>
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-          <h3 class="offer-slider__header">Акція "-40% на пробне заняття з кінезітерапії"</h3>
-          <p class="offer-slider__description">Маєте чудову нагоду потурбуватись про власне здоров’я за вигідною
+          <h3 class="offer__subheader">Акція "-40% на пробне заняття з кінезітерапії"</h3>
+          <p class="offer__description">Маєте чудову нагоду потурбуватись про власне здоров’я за вигідною
             пропозицією вартістю 680 408 грн.</p>
-          <a class="offer-slider__link" href="#">Переглянути детальніше</a>
+          <a class="offer__link" href="#">Переглянути детальніше</a>
         </div>
         <div class="offer__form">
           <form action="#" class="offer-form">
@@ -144,34 +147,34 @@
 
       </div>
     </section>
-    <section class="price">
+  <section class="price">
       <h2 class="price__header">Прайс-лист</h2>
       <div class="price__block">
-        <ul class="price-list">
-          <li class="price-list__header price-header">
+        <ul class="price__list">
+          <li class="price-header">
             <p class="price-header__item">Kod</p>
             <p class="price-header__item">Konsultacje</p>
             <p class="price-header__item">Cena brutto</p>
           </li>
-          <li class="price-list__item price-item">
-            <p class="price-item__text">89.000</p>
-            <p class="price-item__text">Konsultacja anestezjologiczna </p>
-            <p class="price-item__text">280 zł</p>
+          <li class="price__item">
+            <p class="price__text">89.000</p>
+            <p class="price__text">Konsultacja anestezjologiczna </p>
+            <p class="price__text">280 zł</p>
           </li>
-          <li class="price-list__item price-item">
-            <p class="price-item__text">89.000</p>
-            <p class="price-item__text">Telekonsultacja anestezjologiczna </p>
-            <p class="price-item__text">190 zł</p>
+          <li class="price__item">
+            <p class="price__text">89.000</p>
+            <p class="price__text">Telekonsultacja anestezjologiczna </p>
+            <p class="price__text">190 zł</p>
           </li>
-          <li class="price-list__item price-item">
-            <p class="price-item__text">89.000</p>
-            <p class="price-item__text">Konsultacja anestezjologiczna </p>
-            <p class="price-item__text">280 zł</p>
+          <li class="price__item">
+            <p class="price__text">89.000</p>
+            <p class="price__text">Konsultacja anestezjologiczna </p>
+            <p class="price__text">280 zł</p>
           </li>
-          <li class="price-list__item price-item">
-            <p class="price-item__text">89.000</p>
-            <p class="price-item__text">Konsultacja anestezjologiczna </p>
-            <p class="price-item__text">280 zł</p>
+          <li class="price__item">
+            <p class="price__text">89.000</p>
+            <p class="price__text">Konsultacja anestezjologiczna </p>
+            <p class="price__text">280 zł</p>
           </li>
         </ul>
         <ul class="price-list">
@@ -180,25 +183,25 @@
             <p class="price-header__item">Badania</p>
             <p class="price-header__item">Cena brutto</p>
           </li>
-          <li class="price-item">
-            <p class="price-item__text">89.000</p>
-            <p class="price-item__text">Konsultacja anestezjologiczna </p>
-            <p class="price-item__text">280 zł</p>
+          <li class="price__item">
+            <p class="price__text">89.000</p>
+            <p class="price__text">Konsultacja anestezjologiczna </p>
+            <p class="price__text">280 zł</p>
           </li>
-          <li class="price-item">
-            <p class="price-item__text">89.000</p>
-            <p class="price-item__text">Telekonsultacja anestezjologiczna </p>
-            <p class="price-item__text">190 zł</p>
+          <li class="price__item">
+            <p class="price__text">89.000</p>
+            <p class="price__text">Telekonsultacja anestezjologiczna </p>
+            <p class="price__text">190 zł</p>
           </li>
-          <li class="price-item">
-            <p class="price-item__text">89.000</p>
-            <p class="price-item__text">Konsultacja anestezjologiczna </p>
-            <p class="price-item__text">280 zł</p>
+          <li class="price__item">
+            <p class="price__text">89.000</p>
+            <p class="price__text">Konsultacja anestezjologiczna </p>
+            <p class="price__text">280 zł</p>
           </li>
-          <li class="price-item">
-            <p class="price-item__text">89.000</p>
-            <p class="price-item__text">Konsultacja anestezjologiczna </p>
-            <p class="price-item__text">280 zł</p>
+          <li class="price__item">
+            <p class="price__text">89.000</p>
+            <p class="price__text">Konsultacja anestezjologiczna </p>
+            <p class="price__text">280 zł</p>
           </li>
         </ul>
       </div>
@@ -249,17 +252,30 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__policy policy">
-      <p class="policy__description">Jakiekolwiek wykorzystanie lub kopiowanie wybranych materiałów ze strony jest dozwolone tylko za zgodą właściciela praw autorskich i tylko z powołaniem się na źródło.</p>
-      <img class="policy__image" src="./img/visa.svg" alt="visa">
+    <div class="footer__policy">
+      <p class="footer__description">Jakiekolwiek wykorzystanie lub kopiowanie wybranych materiałów ze strony jest
+        dozwolone tylko za zgodą właściciela praw autorskich i tylko z powołaniem się na źródło.</p>
+      <img class="footer__image" src="./img/visa.svg" alt="visa">
     </div>
     <div class="footer__menu menu">
       <ul class="menu__list menu-list">
-        <li class="menu-list__item">O nas</li>
-        <li class="menu-list__item">Usługi</li>
-        <li class="menu-list__item">Blog</li>
-        <li class="menu-list__item">Praca</li>
-        <li class="menu-list__item">Cennik</li>
+        <li class="menu-list__item">
+          <a href="">
+            O nas
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#">Usługi</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#">Blog</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#">Praca</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#">Cennik</a>
+        </li>
       </ul>
       <div class="footer__info footer-info">
         <p class="footer-info__item">Lokalizacja</p>
@@ -290,14 +306,24 @@
     </div>
     <div class="footer__links links">
       <ul class="links__list links-list">
-        <li class="links-list__item">POLITYKA PRYWATNOŚCI</li>
-        <li class="links-list__item">REGULAMIN</li>
-        <li class="links-list__item">PRZYGOTOWANIE DO BADAŃ</li>
-        <li class="links-list__item">INFORMACJA O PRAWACH PACJENTA</li>
-        <li class="links-list__item">POLITYKA COOKIE</li>
+        <li class="links-list__item">
+          <a href="#">POLITYKA PRYWATNOŚCI</a>
+        </li>
+        <li class="links-list__item">
+          <a href="#">REGULAMIN</a>
+        </li>
+        <li class="links-list__item">
+          <a href="#">PRZYGOTOWANIE DO BADAŃ</a>
+        </li>
+        <li class="links-list__item">
+          <a href="#">INFORMACJA O PRAWACH PACJENTA</a>
+        </li>
+        <li class="links-list__item">
+          <a href="#">POLITYKA COOKIE</a>
+        </li>
       </ul>
     </div>
-  </footer>
+  </footer> 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
