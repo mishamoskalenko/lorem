@@ -45,9 +45,14 @@
     background: #CC8E1E;
     padding: 19px 159px;
     margin-bottom: 14px;
+    cursor: pointer;
     @media (max-width: $breakpoint-tablet) {
         padding: 19px 100px;
     }
+}
+
+.offer-form__button:hover{
+    background: rgb(236, 159, 15);
 }
 
 .offer-form__check{

@@ -1,5 +1,8 @@
 .price{
     margin-bottom: 147px;
+    @media (max-width: $breakpoint-desktop) {
+        margin-bottom: 80px;
+    }
 }
 
 .price__header{
